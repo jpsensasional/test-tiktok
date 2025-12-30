@@ -1,0 +1,1068 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Oswald&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-color);
+    font-size: var(--text-size-default);
+    background: var(--primary-background);
+
+}
+
+#mySidenav
+{
+	position:fixed;
+	top: 180px;
+	right:100px;
+	z-index: 999;
+}
+
+#mySidenav div#nav {
+	position:absolute; 
+	font-size: 20px;
+	border-radius: 0 5px 5px 0;
+	left: 36px;
+	transition: 0.3s;
+	display: flex;
+}
+#mySidenav div#nav:hover {
+  left: -138px;
+}
+
+#kontak-title{
+	width:189px; 
+	/*margin-top:-7px;*/
+	margin-bottom: 10px; 
+	border-radius:0px 4px 0px 0px; 
+	padding-top:22px; 
+	text-align:center; 
+	height:50px;
+	height: 83px;
+	line-height: 18px;
+	background: #000;
+}
+#kontak-content{
+	width: 190px; 
+	padding:5px 10px 8px 10px; 
+	font-size: 15px;
+    background-color:#FFF;
+    color: #000; 
+}
+
+.abel {
+    font-family: 'Abel', sans-serif;
+}
+
+.btn-black{
+	font-size: .8rem;
+	width:100%;
+	cursor:pointer;
+	font-weight: bold;
+	padding: 10px 8px;
+	color: var(--text-color);
+}
+
+.btn-black:hover {
+    color: var(--reverse-text-color);
+    background:  var(--primary-color);
+}
+
+.menuleft {
+	margin: 0px auto 0px;
+	display: flex;
+	flex-direction: column;
+}
+	
+.menuleft > ul{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+
+#informasi-menu{
+	margin:150px auto 0px; 
+	width:714px; 
+	padding: 0px 0px 0px 0px; 
+	box-shadow:rgba(0,0,0,.3) 0px 5px 10px 10px; 
+	border:1px solid #333; 
+	border-radius: 10px;
+	background: var(--informasi-menu-background);
+}
+
+#informasi-content {
+    border-radius: 0px 9px 9px 0px;
+    padding-left: 20px;
+    width: 563px;
+    background-color: var(--informasi-content-background);
+}
+
+
+#informasi-content-title {
+    width: 240px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 12px;
+    margin-top: 20px;
+    border-bottom: 3px var(--primary-color) solid;
+    color: var(--text-primary-color);
+}
+
+#informasi-content-info {
+    margin-top: 12px;
+    font-weight: 300;
+    color: var(--text-primary-color);
+}
+
+
+.closebox {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#informasi-logo {
+    padding: 24px 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    
+}
+
+.running-text {
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll{
+  0% {
+   left: 100%;
+  }
+  100% {
+    left: -800px;
+  }
+}
+
+table {
+    color: var(--text-primary-color)!important;
+}
+
+tr:nth-child(odd) {
+    background: linear-gradient(0deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.05) 100%);
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border: none;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    color: var(--text-primary-color);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "marquee"
+    "header"
+    "devider"
+    "contentdata"
+    "togel-desktop"
+    "provider"
+    "transaksi"
+    "guidelines"
+    "bantuan"
+    "footer"
+}
+
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+ul {
+    padding: 0;
+}
+
+.wrapper>*>* {
+    margin: auto;
+    width: 1000px;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+.btn {
+    height: 30px; 
+    border-radius: 3px;
+}
+
+.btn-masuk {
+    background: var(--button-masuk-color)!important;
+    color: white;
+}
+
+.btn-daftar {
+    background: var(--button-daftar-color)!important;
+    color: white;
+}
+
+.desktop-only {
+    display: block!important;
+}
+
+.mobile-only {
+    display: none!important;
+}
+
+.btn-promosi {
+    background: linear-gradient(60deg, #b08432, #cfbe87, #b08432);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 2s ease infinite;
+}
+
+.btn-informasi {
+    background: -webkit-linear-gradient(60deg, #b08432, #cfbe87);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.header {
+    background: var(--header-background);
+    grid-area: header;
+    height: 102px;
+}
+
+.header-content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-areas:
+    "logo menu promosi"
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+/* Desktop */
+.logoimg {
+    height: 64px;
+    width: 230px;
+    object-fit: contain;
+    object-position: left;
+}
+
+.login {
+    grid-area: login;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    
+}
+
+.login-form {
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 4px;
+}
+
+.login-field {
+    width: 104px; 
+    height: 30px; 
+    border-radius: 3px;
+}
+
+.login-input-field {
+    margin: 0px;
+    padding: 0px 8px;
+    border-radius: 3px!important;
+}
+
+
+.promosi {
+    grid-area: promosi;
+    display: flex; 
+    align-items: center;
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-item>label:hover, .bantuan-item:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.menu-item>label {
+    white-space: nowrap;
+    color: var(--menu-item-color);
+}
+
+
+.devider {
+    grid-area: devider;
+    height: 3px;
+    width: 100%;
+    margin: 8px 0;
+}
+
+.marquee {
+    color: var(--marquee-color);
+    background: var(--marquee-background);
+    grid-area: marquee;
+    display: flex;
+    font-size: .8rem;
+    width: 100%;
+    border-bottom: 2px solid var(--line-color);
+}
+
+.marquee-content {
+    height: 100%;
+    display: flex;
+}
+
+
+.running {
+    padding: 0px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.running>.marquee-shadow {
+    position: absolute; 
+    background: linear-gradient(90deg, var(--marquee-background) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, var(--marquee-background) 100%); 
+    width: 100%; 
+    height: 100%; 
+    z-index: 999;
+}
+
+.contentdata {
+    grid-area: contentdata;
+    background: var(--primary-background);
+}
+
+.contentdata>* {
+    width: 100%;
+}
+
+.content-body {
+    overflow: hidden;
+}
+
+.banner {
+    aspect-ratio: 1920 / 380;
+    background: var(--banner-background);
+}
+
+.togel {
+    
+    background: var(--togel-background);
+    grid-area: togel;
+    position: relative;
+
+}
+
+.show-more {
+    position: absolute; 
+
+    z-index: 999; 
+    bottom: 0px;
+    width: 100%;
+    
+    /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0) 60%, rgba(0,0,0,0)); */
+}
+
+
+
+.provider {
+    background: var(--provider-background);
+    grid-area: provider
+}
+
+.provider-group {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+
+
+    /* "p-5 w-100 d-flex flex-column justify-content-center align-items-center" */
+}
+
+.transaksi {
+    background: var(--transaksi-background);
+    grid-area: transaksi;
+    padding-bottom: 16px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaksi-title {
+    grid-area: transaksi-title;
+    place-items: center;
+    margin-bottom: 8px;
+}
+
+.transaksi-title-group {
+    display: flex;
+    align-items: end;
+    gap: 4px;
+}
+
+.transaksi-kontak {
+    display: flex;
+}
+
+.other {
+    grid-area: other;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-self: start;
+}
+
+.other-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.other-group>div {
+    height: 32;
+    display: flex;
+    justify-content: end;
+}
+
+.guidelines {
+    grid-area: guidelines;
+    background: var(--guidelines-background);
+}
+
+.guidelines-content {
+    /*padding-top: 48px; */
+    display: flex;
+}
+
+
+.bantuan {
+    padding: 16px;
+    background: var(--bantuan-background);
+    grid-area: bantuan;
+}
+
+.bantuan-content {
+    display: flex;
+    list-style-type: none;
+}
+
+
+.bantuan-devider {
+    padding: 0 16px;
+}
+
+.footer {
+    font-size: .9rem;
+    background: var(--footer-background);
+    grid-area: footer;
+    padding: 16px 0;
+    border-top: 2px solid #bdbdbd;
+}
+
+.copyright {
+    display: flex;
+    gap: 4px;
+}
+
+.hover {
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
+    
+    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+    width: 100%; 
+    background: var(--hover-background); 
+    top: 148px; 
+    z-index: 1000; 
+    padding: 12px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover:hover {
+    visibility: visible!important;
+    opacity: 1!important;
+}
+
+
+
+.hover-menu {
+    display: none;
+    flex-wrap: wrap;
+    gap: 16px 8px;
+    justify-content: center;
+}
+
+.hover-item {
+    width: 108px;
+    max-width: 108px;
+    display: grid; 
+    grid-template-rows: 1fr auto;
+}
+
+.hover-item>figure {
+    height: 90px; 
+    display: grid; 
+    place-items: center;
+    margin: 0px;
+}
+
+.hover-item>figure>img {
+    height: 90px;
+    width: 90px;
+}
+
+.hover-item>figcaption {
+    color: white;
+    width: 100%; 
+    padding: 2px 0px; 
+    border: 2px solid white; 
+    display: grid; 
+    place-items: center; 
+    border-radius: 5px;
+    font-size: .75rem
+}
+
+.form-daftar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    font-size: 1rem
+}
+
+.form-daftar-full {
+    grid-column: span 4;
+}
+
+.form-daftar-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-daftar-cell>label {
+    font-weight: bold;
+}
+
+.form-daftar-cell>input {
+    border-radius: 3px;
+}
+
+.footer-group {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.prepend {
+    display: grid;
+    place-items: center;
+    background: var(--prepend-background); 
+    width: 40px;
+    border: var(--prepend-border) solid var(--bs-border-color);
+   
+}
+
+.prepend-icon {
+    font-size: 18px;
+    color: var(--prepend-color);
+}
+
+.content-area {
+    width: 1000px; 
+    margin: auto; 
+    padding: 8px 0;
+}
+
+.content-main {
+    width: 1000px;
+    margin: auto;
+}
+
+.content-box {
+    width: 100%; 
+    padding: 12px; 
+    background: var(--content-box-background); 
+    border-radius: 8px
+}
+
+
+
+
+.slideDown{
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 0.8s;	
+	-webkit-animation-duration: 0.8s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;						
+}
+
+.btn-footer {
+    padding: 0px 8px;
+    border: 1px solid var(--reverse-theme-color); 
+    border-radius: 4px; 
+    height: 32px; 
+    padding: 0 16px; 
+    display: grid; 
+    place-items: center; 
+    color: var(--reverse-theme-color);
+}
+
+.btn-footer:hover {
+    background: var(--reverse-theme-color);
+    color: var(--primary-theme-color);
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}		
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(-100%);
+	}		
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+
+
+
+.page-link {
+    background: var(--page-link-background);
+    border: var(--page-link-border);
+    color: var(--page-link-color);
+}
+
+.page-item+.active>*, .page-link:hover {
+	border: var(--page-item-active-border);
+	background: var(--page-item-active-background);
+    color: var(--page-item-active-color);
+}
+
+.devider {
+    background: var(--devider-color);
+}
+
+.fitur-header {
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    line-height: 1rem
+}
+
+.panel-body, .card-body {
+    font-size: 1.1rem;
+}
+
+.contentbox {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    html, body {
+        font-size: calc(var(--text-size-default) * .8);
+    }
+
+
+    .desktop-only {
+        display: none!important;
+    }
+    
+    .mobile-only {
+        display: block!important;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "appbar"
+        "marquee"
+        "header"
+        "contentdata"
+        "togel-mobile"
+        "devider"
+        "provider"
+        "transaksi"
+        "bantuan"
+        "footer"
+        "guidelines";
+    }
+    
+    .zoom-wrap {
+        transform: scale(0.8);
+        transform-origin: top left;
+        width: 125%; /* 1 / 0.8 = 1.25 to keep layout width correct */
+    }
+    
+    .appbar {
+        grid-area: appbar;
+        height: 60px;
+        display: grid;
+        place-items: center;
+        /*box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;*/
+    }
+
+    .wrapper>*>* {
+        margin: auto;
+        width: 100%;
+        padding: 0 var(--mobile-padding-horizontal);
+    }
+
+    .marquee {
+        border-top: 3px solid var(--line-color);
+        border-bottom: 0;
+    }
+
+    .marquee-content {
+        padding: 0px
+    }
+
+    .header {
+        height: auto;
+        padding: 0px;
+    }
+
+    .header-content {
+        padding: 0px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "marquee"
+        "mslider"
+        "menu-mobile"
+        "menu-content"
+        "login"
+        "promosi"
+    }
+    
+    .menu-mobile {
+        grid-area: menu-mobile;
+    }
+    
+    .menu-content {
+        grid-area: menu-content;
+    }
+    
+    .marquee-content {
+        height: 100%;
+    }
+
+    .logo {
+        display: none
+        
+    }
+    
+    /* Mobile */
+    .logoimg {
+        height: 48px;
+        width: 172px;
+        margin: 0px;
+        object-position: center;
+    }
+    
+    
+    .mslider {
+        grid-area: mslider;
+        aspect-ratio: 600/280;
+        background: var(--primary-theme-color);
+    }
+    
+
+    .menu {
+        display: none;
+        /*display: grid;*/
+        /*place-items: center;*/
+        /*grid-template-columns: repeat(7, 1fr);*/
+        /* background: linear-gradient(0deg, rgba(0,0,0,0.08) 0%, rgba(255,255,255,0) 100%), var(--primary-color); */
+        /*gap: 0px;*/
+        /*border-bottom: 3px solid red;*/
+    }
+
+    .menu-item {
+        height: 100%;
+        width: 100%;
+        font-size: var(--text-size-default);
+        /*display: grid;*/
+        /*place-items: center;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 4px;
+        padding-top: 4px;
+        background: linear-gradient(90deg, rgba(26,26,26,0.3) 0%, rgba(0,0,0,0.3) 10%, rgba(0,0,0,0.3) 100%), var(--primary-color);
+        /* border-left: 1px solid #555;
+        border-right: 1px solid var(--primary-background); */
+    }
+    
+    
+    .menu-item:hover {
+        color: var(--text-color);
+    }
+    
+    .menu-item>label {
+        white-space: nowrap;
+        color: white;
+        font-weight: bold;
+        /*color: var(--marquee-color);*/
+    }
+
+    .menu-item>img {
+        height: 24px;
+    }
+
+    .login {
+        flex-direction: column;
+    }
+
+    .login-form {
+        padding: 32px 0;
+        margin: 0px 64px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-input-field {
+        border-top-left-radius: 0!important;
+        border-bottom-left-radius: 0!important;
+        font-size: 1rem;
+    }
+
+    .login-field, .login-form>button, .btn-promosi {
+        height: 36px; 
+        width: 100%!important;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .btn-masuk {
+        font-size: 1.2rem;
+        text-shadow: 1px 1px #000000;
+        height: 36px!important;
+        border-radius: 8px;
+    }
+    
+    .btn-daftar {
+        font-size: 1.2rem;
+        text-shadow: 1px 1px #000000;
+        height: 36px!important;
+        border-radius: 8px;
+    }
+
+
+    .promosi {
+        padding: 0 calc(var(--mobile-padding-horizontal) * 2);
+        gap: 4px;
+    }
+
+    .promosi>* {
+        width: 100%;
+    }
+
+    .btn-promosi {
+        background-size: 300% 300%!important;
+        background: var(--button-promosi-color);
+        -webkit-text-fill-color: black;
+        font-weight: bold!important;
+        animation: gradient 10s ease infinite;
+        border-radius: 3px;
+        display: grid;
+        place-items: center;
+    }
+
+    .contentdata {
+        background: var(--primary-background);
+        padding: 12px 0;
+    }
+
+    .banner {
+        aspect-ratio: 3;
+    }
+
+    .banner>* {
+        border-radius: 16px;
+        border-collapse: separate;
+        border: 2px solid gray;
+    }
+
+    .togel {
+        padding: 24px;
+        box-shadow: rgba(0,0,0,1) 0px 0px 10px 0px;
+    }
+
+    .togel-title {
+        padding: 0px;
+        padding-bottom: 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .content-main {
+        width: 100%;
+        padding: var(--mobile-padding-horizontal);
+        padding-bottom: 0px;
+        font-size: 1rem;
+    }
+
+
+    .provider-group {
+        padding: var(--mobile-padding-horizontal);
+    }
+    
+    .transaksi-kontak {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .transaksi-content {
+        display: flex;
+        flex-direction: column;
+        /*padding: 0 calc(var(--mobile-padding-horizontal) * 2)*/
+    }
+    
+
+
+    .bantuan-content {
+        flex-direction: column;
+        list-style: disc;
+        gap: 8px;
+    }
+    
+    .footer {
+        font-size: 1rem;
+        padding-bottom: 96px;
+    }
+
+    .footer-group {
+        /*justify-content: space-between;*/
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .copyright {
+        flex-direction: column;
+        font-size: 1rem;
+        width: 100%;
+    }
+    .content-area {
+        width: 100%;
+    }
+    
+    .content-box {
+        width: 100%; 
+        padding: 0px; 
+        background: transparent; 
+        border-radius: 0px
+    }
+
+    .guidelines {
+        grid-area: guidelines;
+    }
+    
+    .guidelines-content>img {
+        width: 100%;
+    }
+
+    .mobile-provider-group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+
+    }
+    
+    .provider-item {
+        display: grid;
+        place-items: center;
+    }
+    
+    .provider-item>img {
+        width: 100%;
+        object-fit: contain;
+        
+    }
+    
+    .fitur-header {
+        font-size: 1.4rem;
+    }
+    
+    .panel-body, .card-body {
+        font-size: 1.2rem;
+    }
+
+    #mobileregister {
+        margin: 0px!important;
+    }
+    
+    #mySidenav {
+        display: none;
+    }
+    
+
+}

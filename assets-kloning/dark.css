@@ -1,0 +1,20 @@
+:root {
+    --secondary-background: #0b0b0b;
+    --primary-theme-color: black;
+    --reverse-theme-color: white;
+    --highlight-text-color: #FFD700;
+    --page-link-background: linear-gradient(0deg, rgba(23,26,33,1) 0%, rgba(71,81,99,1) 100%);
+    --page-link-color: var(--primary-text-color);
+    --page-link-border: 1px solid #bdbdbd;
+    --page-item-active-color: linear-gradient(0deg, rgba(18,20,25,1) 0%, rgba(7,8,10,1) 100%);
+    --page-item-active-background: var(--primary-color);
+    --page-item-active-border: 1px solid var(--primary-color);
+    --devider-color: linear-gradient(90deg, rgba(224,224,224,1) 0%, rgba(224,224,224,1) 25%, rgba(97,97,97,1) 25%, rgba(97,97,97,1) 100%);
+    --prepend-background: linear-gradient(#484e55, #3a3f44 60%, #313539);
+    --prepend-color: #ffffff;
+    --prepend-border: 0px;
+    --content-box-background: rgba(20, 20, 20, .5);
+    --informasi-menu-background: #333;
+    --informasi-content-background: #000;
+    
+}
