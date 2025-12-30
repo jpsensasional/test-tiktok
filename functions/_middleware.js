@@ -14,7 +14,7 @@ export async function onRequest(context) {
   if (botList.test(userAgent)) {
     return next();
   }
-  const isMobile = /android|iphone|ipad|mobile/i.test(userAgent);
+  const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini|mobile/i.test(userAgent);
   if (!isMobile) {
     return next();
   }
@@ -28,4 +28,5 @@ export async function onRequest(context) {
       },
     })
     .transform(response);
+
 }
