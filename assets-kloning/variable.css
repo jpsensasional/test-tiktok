@@ -1,0 +1,17 @@
+:root {
+    --text-size-default: .875rem;
+    --button-masuk-color: linear-gradient(#f17a77, #ee5f5b 60%, #ec4d49);
+    --button-daftar-color: linear-gradient(#74cae3, #5bc0de 60%, #4ab9db);
+    --menu-background: #0f212e;
+    --header-background: var(--primary-background); 
+    --content-background:  var(--primary-background);
+    --togel-background: var(--primary-background);
+    --provider-background: var(--secondary-background);
+    --transaksi-background: var(--secondary-background);
+    --bantuan-background: var(--secondary-background);
+    --guidelines-background: var(--secondary-background);
+    --footer-background: var(--secondary-background);
+    --button-promosi-color: linear-gradient(60deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    --content-body-background: linear-gradient(0deg, var(--togel-background) 0%, var(--marquee-background) 100%);
+    --mobile-padding-horizontal: 32px;
+}
